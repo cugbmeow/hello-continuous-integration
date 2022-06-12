@@ -180,7 +180,7 @@ Similar to the upload action to send artifacts to the storage, you can use anoth
   Define terms and link to docs.github.com.
 -->
 
-<details id=4>
+<details id=4 open>
 <summary><h2>Step 4: Add branch protections</h2></summary>
 
 *Great job uploading test reports! :partying_face:*
