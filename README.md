@@ -7,7 +7,7 @@
 
 # Continuous Integration
 
-__Create workflows that enable you to use Continuous Integration (CI) for your projects.__
+*Create workflows that enable you to use Continuous Integration (CI) for your projects.*
 
 <!--
   <<< Author notes: Start of the course >>>
@@ -18,9 +18,9 @@ __Create workflows that enable you to use Continuous Integration (CI) for your p
   Do not use quotes on the <details> tag attributes.
 -->
 
-<!--step0
+<!--step0-->
 
-[Continuous integration](https://en.wikipedia.org/wiki/Continuous__integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
+[Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
 - **Who is this for**: Developers, DevOps Engineers, new GitHub users, students, teams.
 - **What you'll learn**: What continous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
@@ -38,7 +38,7 @@ __Create workflows that enable you to use Continuous Integration (CI) for your p
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-endstep0-->
+<!--endstep0-->
 
 <!--
   <<< Author notes: Step 1 >>>
@@ -51,15 +51,15 @@ endstep0-->
 <details id=1>
 <summary><h2>Step 1: Add a test workflow</h2></summary>
 
-__Welcome to "GitHub Actions: Continuous Integration"! :wave:__
+*Welcome to "GitHub Actions: Continuous Integration"! :wave:*
 
-**What is __continuous integration__?**: [Continuous integration](https://en.wikipedia.org/wiki/Continuous__integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
+**What is *continuous integration*?**: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
 ![An illustration split in two. On the left: illustration of how GitHub Actions terms are encapsulated. At the highest level: workflows and event triggers. Inside of workflows: jobs and definition of the build environment. Inside jobs: steps. Inside steps: a call to an action. On the right: the sequence: workflows, job, step, action.](https://user-images.githubusercontent.com/6351798/88589835-f5ce0900-d016-11ea-8c8a-0e7d7907c713.png)
 
 - **Workflow**: A workflow is a unit of automation from start to finish, including the definition of what triggers the automation, what environment or other aspects should be taken account during the automation, and what should happen as a result of the trigger.
 - **Job**: A job is a section of the workflow, and is made up of one or more steps. In this section of our workflow, the template defines the steps that make up the `build` job.
-- **Step**: A step represents one __effect__ of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
+- **Step**: A step represents one *effect* of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
 - **Action**: An action is a piece of automation written in a way that is compatible with workflows. Actions can be written by GitHub, by the open source community, or you can write them yourself!
 
 To learn more, check out "[Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)" in the GitHub Docs.
@@ -97,7 +97,7 @@ First, let's add a workflow to lint our Markdown files in this repository.
 <details id=2>
 <summary><h2>Step 2: Fix the test</h2></summary>
 
-__Great job adding the templated workflow! :tada:__
+*Great job adding the templated workflow! :tada:*
 
 Adding that file to this branch is enough for GitHub Actions to begin running CI on your repository.
 
@@ -125,7 +125,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
 
 1. Update the code in the `ci` branch to get the test to pass. You need to look something like this:
    ```markdown
-   _underscore_
+   *underscore*
    ```
 1. **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
@@ -138,10 +138,10 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
   Define terms and link to docs.github.com.
 -->
 
-<details id=3 open>
+<details id=3>
 <summary><h2>Step 3: Upload test reports</h2></summary>
 
-__The workflow has finished running! :sparkles:__
+*The workflow has finished running! :sparkles:*
 
 So what do we do when we need the work product of one job in another? We can use the built-in [artifact storage](https://docs.github.com/en/actions/advanced-guides/storing-workflow-data-as-artifacts) to save artifacts created from one job to be used in another job within the same workflow.
 
@@ -183,7 +183,7 @@ Similar to the upload action to send artifacts to the storage, you can use anoth
 <details id=4>
 <summary><h2>Step 4: Add branch protections</h2></summary>
 
-__Great job uploading test reports! :partying_face:__
+*Great job uploading test reports! :partying_face:*
 
 Take a look at the merge box, you'll notice you can merge this even though the review process hasn't been met.
 
@@ -198,7 +198,7 @@ Protected branches ensure that collaborators on your repository cannot make irre
 1. Check **Require status checks to pass before merging**.
 1. Check all build and test jobs that you'd like to see in the newly visible gray box.
 1. Click **Create**.
-1. __Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the next step on your own.__
+1. *Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the next step on your own.*
 
 <!-- Wait about 20 seconds then refresh this page for the next step. -->
 
@@ -213,7 +213,7 @@ Protected branches ensure that collaborators on your repository cannot make irre
 <details id=5>
 <summary><h2>Step 5: Merge your pull request</h2></summary>
 
-__Almost there! :heart:__
+*Almost there! :heart:*
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
@@ -221,7 +221,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 
 1. Click **Merge pull request**.
 1. Delete the branch `ci` (optional).
-1. __Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the "finish" on your own.__
+1. *Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the "finish" on your own.*
 
 <!-- Wait about 20 seconds then refresh this page for the next step. -->
 
@@ -235,7 +235,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 <details id=X>
 <summary><h2>Finish</h2></summary>
 
-__Congratulations friend, you've completed this course!__
+*Congratulations friend, you've completed this course!*
 
 <img src=https://octodex.github.com/images/Fintechtocat.png alt=celebrate width=300 align=right>
 
